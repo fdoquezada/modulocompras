@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div>
+
+    <h1> modulo de clientes por fernando</h1>
+    {% for i in clientes %}
+    <h2>{{i.rut}}</h2>
+    <h2>{{i.nombres}}</h2>
+    <h2>{{i.apellidos}}</h2>
+    <h2>{{i.telefono}}</h2>
+    {% endfor%}
+
+</div>
+
+{% endblock %}
